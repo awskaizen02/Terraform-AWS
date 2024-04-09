@@ -23,15 +23,15 @@ Possible Deployment Scenarios:
 ```
 ###	App Architecture:
 
-Infrastructure as Code (IaC):
+## Infrastructure as Code (IaC):
 	This means expressing our infra needs in the form of some template.
 	While creating/realizing the infra, pass the dynamic values.
-Terraform:
+## Terraform:
 	IaC which runs on any virtual platform
-What do we have to do
+## What do we have to do
 	Define your infrastructure as a template in Terraform
 	Execute the template to create infrastructure.
-In which Language do we need to write these templates?
+## In which Language do we need to write these templates?
 	Hashicorp Configuration Language (HCL)
 Here we express what we want in the template which is referred as Desired State
 Now when execute terraform will try to create infra to match your Desired State.
@@ -41,8 +41,8 @@ There are two popular tools
 	Terraform
 	Pulumi
 
-Windows System Setup
-Ensure your os is greater or Window 10
+## Windows System Setup
+### Ensure your os is greater or Window 10
 	Softwares:
 	Chocolatey https://docs.chocolatey.org/en-us/choco/setup
 	Git for windows: https://git-scm.com/download/win
@@ -59,13 +59,15 @@ Terraform Setup and configuration
 	In the visual studio code install extension terraform (hashicorpTerraform)
 
 
-To Do similar stuff on terraform, we need to understand some terms
-Provider: Provider tells terraform where do you want to create the infra, Generally there will be authentication details as well.
-Resource : The infra component which we want to create, while creating resouce we need to pass some arguments
+### To Do similar stuff on terraform, we need to understand some terms
+```
+## Provider: Provider tells terraform where do you want to create the infra, Generally there will be authentication details as well.
+## Resource : The infra component which we want to create, while creating resouce we need to pass some arguments
+
 To write the template
 Provider for AWS https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 Resource for S3 bucket
-
+```
 What we found:
 provider => aws
 resource => aws_s3_bucket
