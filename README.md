@@ -123,4 +123,4 @@ For working with terrafom open terminal , cd into folder where we have terraform
 # init => Downloads the necessary providers into .terraform folder
 # validate => verify the template for configuration being valid or not
 # apply => creates/updates the infrastructure
-)
+
