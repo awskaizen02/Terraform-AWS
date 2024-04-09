@@ -49,12 +49,12 @@ There are two popular tools
 	Terminal: Windows Terminal : From microsoft store on windows 10
 	IDE: Visual Studio Code choco install vscode -y
 	Terraform: choco install terraform -y
-Mac System Setup
+## Mac System Setup
 	Ensure you install homebrew https://brew.sh/
 	Git: brew install git -y
 	Visual Studio Code brew install --cask visual-studio-code -y
 	Terraform brew install terraform -y
-Terraform Setup and configuration
+## Terraform Setup and configuration
 	Create a new folder hello_tf and open visual studio code.
 	In the visual studio code install extension terraform (hashicorpTerraform)
 
