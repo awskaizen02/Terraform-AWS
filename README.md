@@ -72,49 +72,55 @@ What we found:
 provider => aws
 resource => aws_s3_bucket
 
-##Syntax for provider
-
+## Syntax for provider
+```
 provider "<name of provider>" {
     argument_1 = "value_1"
     ...
     argument_n = "value_n"
 }
-
+```
 Argument in Terraform is the input given by the user
 All the arguments for AWS Provider https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference
 Still we need to configure authentication, ignoring that the template is as shown below
-
+```
 provider "aws" {
     region = "ap-south-1"
 }
+```
 
-Lets look at arguments of s3 bucket resource https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#argument-reference
+### Lets look at arguments of s3 bucket resource https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#argument-reference
+
 To Create a resource
+```
 resource "<type-of-resource>" "<name for reference in tf tempalte>" {
     argument_1 = "value_1"
     ...
     argument_n = "value_n"
 
 }
+```
 
-Lets add the s3 resource to the template
-
+### Lets add the s3 resource to the template
+```
 provider "aws" {
     region = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "first_bucket"  {
     bucket = "hippojan08"
-}	
+}
+```	
 
-While configuring Provider, Authentication has to be configured
-For AWS Provider Authentication https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration
-https://sst.dev/chapters/create-an-iam-user.html steps to create access key and secret key
+### While configuring Provider, Authentication has to be configured
+
+### For AWS Provider Authentication https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration
+
+### https://sst.dev/chapters/create-an-iam-user.html steps to create access key and secret key
 
 For working with terrafom open terminal , cd into folder where we have terraform templates.
 
-init => Downloads the necessary providers into .terraform folder
-
-validate => verify the template for configuration being valid or not
-apply => creates/updates the infrastructure
+# init => Downloads the necessary providers into .terraform folder
+# validate => verify the template for configuration being valid or not
+# apply => creates/updates the infrastructure
 )
