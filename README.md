@@ -120,7 +120,7 @@ resource "aws_s3_bucket" "first_bucket"  {
 
 For working with terrafom open terminal , cd into folder where we have terraform templates.
 
-* init => Downloads the necessary providers into .terraform folder *
-* validate => verify the template for configuration being valid or not *
-* apply => creates/updates the infrastructure *
+* init => Downloads the necessary providers into .terraform folder 
+* validate => verify the template for configuration being valid or not 
+* apply => creates/updates the infrastructure 
 
