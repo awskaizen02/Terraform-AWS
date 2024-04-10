@@ -65,6 +65,7 @@ There are two popular tools
 ## Resource : The infra component which we want to create, while creating resouce we need to pass some arguments
 
 To write the template
+-------------------------
 Provider for AWS https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 Resource for S3 bucket
 ```
